@@ -17,7 +17,6 @@ class MKException(Exception):
 
 
 class Maksekeskus:
-    _name = 'addgoals.maksekeskus'
 
     SIGNATURE_TYPE_1 = 'V1'
     SIGNATURE_TYPE_2 = 'V2'
