@@ -68,13 +68,13 @@ class Maksekeskus:
             return mac_input
 
     def get_secret_key(self):
-        return self.env['ir.config_parameter'].sudo().get_param('addgoals.mk.api_key')
+        return self.env['ir.config_parameter'].sudo().get_param('mk.api_key')
 
     def get_api_url(self):
-        return self.env['ir.config_parameter'].sudo().get_param('addgoals.mk.api_url')
+        return self.env['ir.config_parameter'].sudo().get_param('mk.api_url')
 
     def get_shop_id(self):
-        return self.env['ir.config_parameter'].sudo().get_param('addgoals.mk.shop_id')
+        return self.env['ir.config_parameter'].sudo().get_param('mk.shop_id')
 
     def create_mac_hash(self, string):
         string_to_hash = string + self.get_secret_key()
